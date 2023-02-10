@@ -23,7 +23,7 @@ decrementBtn.addEventListener('click',  event => {
 
     counterValue.decrement();
     console.log(counterValue);
-    decrementBtn.textContent = counterValue.value;
+   
     valueEl.textContent = counterValue.value;
 }
 )
@@ -32,7 +32,7 @@ incrementBtn.addEventListener('click',  event => {
     console.log("клікнути на інкремент");
     counterValue.increment();
     console.log(counterValue);
-    incrementBtn.textContent = counterValue.value;
+    
     valueEl.textContent = counterValue.value;
 })
 

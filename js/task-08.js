@@ -11,10 +11,7 @@ function onFormSubmit(event) {
         return window.alert("Please fill in all the fields!");
     }
 
-    const formElements = event.currentTarget.elements;
-    const mail = formElements.email.value;
-    const passwordEl = formElements.password.value;
-    console.log(mail, passwordEl);
+    console.log(`Login: ${email.value}, Password: ${password.value}`);
     event.currentTarget.reset();
 }
 

@@ -14,9 +14,14 @@ const images = [
 ];
 
 const galleryList = document.querySelector('.gallery');
+console.log(galleryList);
+const markup = images.map(({ url, alt }) =>
 
-const galleryImg = images.map(({ url, alt }) => `<li class = "class gallery-item"> ${url, alt} </li>`)
-  .join("");
-galleryList.style.backgroundColor = "yellow";
-galleryList.style.fontSize = "24px";
-galleryList.insertAdjacentHTML('beforeend', galleryImg);
+  `<li class="gallery-list_item"><img src="${url}" alt="${alt}" width="240"></li>`).join("");
+
+console.log(markup);
+
+galleryList.insertAdjacentHTML("afterbegin", markup);
+
+
+
